@@ -1,0 +1,25 @@
+{
+  "produtos": [
+  {
+  "id": 1,
+  "descricao": "Mesa",
+  "estoque": 10,
+  "valor": 10,
+  "imagem": "assets/mesa.webp"
+  },
+  {
+  "id": 2,
+  "descricao": "Cama",
+  "estoque": 10,
+  "valor": 15,
+  "imagem" : "assets/cama.jpg"
+  },
+  {
+  "id": 3,
+  "descricao": "Sofa",
+  "estoque": 10,
+  "valor": 5.25,
+  "imagem" : "assets/sofa.webp"
+  }
+  ]
+ }
