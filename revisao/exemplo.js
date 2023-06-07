@@ -34,3 +34,5 @@ let nome3 = leia("Digite seu nome : ")
 let temp =parseInt(leia("Digite uma temperatura em °C : ")) 
 
 console.log("Olá "+nome3+" a temperatura digitada em kelvin é "+(temp+273))
+
+
