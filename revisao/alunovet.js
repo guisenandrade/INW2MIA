@@ -21,7 +21,7 @@ for(let i=0; i<alunos.length; i++){
    console.log(matriculas[i]+"\t"+alunos[i]+"\t"+notas[i]+"\t"+situacao)
 }
 console.log("Mudando a nota do aluno")
-let auxMat = leia("Digite a matricula do aluno : ").toLocaleUpperCase()
+let auxMat = leia("Digite a matricula do aluno : ").toUpperCase()
 for(let i=0; i<alunos.length; i++){
    if(auxMat == matriculas[i]){
   console.log("Aluno escolhido : "+alunos[i])
