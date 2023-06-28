@@ -1,6 +1,4 @@
 
-
-
 class ProdutoMoveis{
     constructor(id,descricao,ativo,estoque,preco,peso,tamanho,cor){
         this.id = id
@@ -44,13 +42,11 @@ class ProdutoMoveis{
             else if( valor == 0){
                 console.log("Impossível realizar com valor zerado")
             }
-            else if(this.estoque < valor){
-                console.log("Estoque insuficiente")
-            }
+            
             else{
                 this.estoque = this.estoque + valor
             }
-        }
+        } 
        else{
         console.log("Conta inativa")
        }
@@ -61,16 +57,17 @@ class ProdutoMoveis{
 
 //programa principal
 const leia = require("prompt-sync")()
-let tipo = ""
+
+let verificar = ""
 let valor = ""
 
 console.log("Bem vindo a loja de móveis\n")
 
-let verificar = leia("DESEJA FAZER COMPRAS S/N : ").toUpperCase()
+verificar = leia("DESEJA FAZER COMPRAS S/N : ").toUpperCase()
 
 
 
-    if (verificar == "S"){
+    while(verificar == "S"){
 
         let id = leia("Digite o ID do produto : ")
         let descricao = leia("Digite a descrição do produto : ")
@@ -83,13 +80,14 @@ let verificar = leia("DESEJA FAZER COMPRAS S/N : ").toUpperCase()
 
         console.log("Produto cadastrado com sucesso")
 
-        p1.ativar
+        p1.ativar()
 
 
         for(let i = 0; i<=5 ; i++){
 
             console.log(p1)
-            valor = leia("Quantos produtos deseja comprar : ")
+
+            valor = parseInt(leia("Quantos produtos deseja comprar : "))
 
             if(valor<=0){
                 valor = leia("VALOR INDISPONÍVEL\n Quantos produtos deseja comprar : ")
@@ -108,7 +106,8 @@ let verificar = leia("DESEJA FAZER COMPRAS S/N : ").toUpperCase()
 
         console.log(p1)
 
-        let verificar = leia("DESEJA FAZER COMPRAS S/N : ").toUpperCase()
+        verificar = leia("DESEJA FAZER COMPRAS S/N : ").toUpperCase()
+
         }
             console.log("ATÉ BREVE")
         
