@@ -1,0 +1,1 @@
+Ápos clonar o repositória do projeto executar: npm i
