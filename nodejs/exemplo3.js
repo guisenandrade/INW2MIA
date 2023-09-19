@@ -30,8 +30,8 @@ getTurma('A')
             getTurma('C')
         .then(alunos =>{
             nomes = nomes.concat(alunos.map(a => `C : ${a.nome}`))
+            console.log(nomes)
+      })
     })
-    console.log(nomes)
-})
+  })
 
-//Promise.all([getTurma('A'),getTurma('B'),getTurma('C')])
